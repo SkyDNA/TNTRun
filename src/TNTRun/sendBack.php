@@ -21,7 +21,7 @@ class sendBack extends PluginTask {
         $this->prefix = $this->plugin->getConfig()->get("prefix");
     }
 
-    public function onRun($tick) {
+    public function onRun(int $tick) {
         $level = $this->plugin->getServer()->getDefaultLevel();
         $spawn = $level->getSafeSpawn();
         $this->player->teleport(new Position($spawn->getX(), $spawn->getY(), $spawn->getZ(), $level), 0, 0);
