@@ -21,7 +21,7 @@ class sendPopupAgain extends PluginTask {
         $this->prefix = $this->plugin->getConfig()->get("prefix");
     }
 
-    public function onRun($tick) {
+    public function onRun(int $tick) {
         $this->player->sendPopup($this->text);
     }
 
