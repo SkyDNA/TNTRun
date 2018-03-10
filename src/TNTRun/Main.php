@@ -158,7 +158,7 @@ class Main extends PluginBase implements Listener {
         }
     }
 
-    public function onCommand(\pocketmine\command\CommandSender $sender, \pocketmine\command\Command $cmd, $label, array $args) : bool{
+    public function onCommand(\pocketmine\command\CommandSender $sender, \pocketmine\command\Command $cmd, string $label, array $args) : bool{
         switch ($cmd->getName()) {
             case "tr":
                 if (!$sender instanceof Player) {
