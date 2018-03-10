@@ -22,7 +22,7 @@ class GameSender extends PluginTask {
         $this->prefix = $this->plugin->getConfig()->get("prefix");
     }
 
-    public function onRun($tick) {
+    public function onRun(int $tick) {
         $config = $this->plugin->getConfig();
         $arenas = $config->get("arenas");
         if (count($arenas) > 0) {
