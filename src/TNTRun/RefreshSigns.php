@@ -18,7 +18,7 @@ class RefreshSigns extends PluginTask {
         $this->prefix = $this->plugin->getConfig()->get("prefix");
     }
 
-    public function onRun($tick) {
+    public function onRun(int $tick) {
         $allplayers = $this->plugin->getServer()->getOnlinePlayers();
         $level = $this->plugin->getServer()->getDefaultLevel();
         $tiles = $level->getTiles();
